@@ -40,7 +40,7 @@ RNHaptics.tada();
 ```
 
 ## Development
-In order to develop simply modify files opening `Example` app via Android Studio or Xcode. Generally, it means that modifications refer to `node_modules` files. If you wish your changes to be places in main folder in order to commit use: 
+In order to develop simply modify files by opening the `Example` app via Android Studio or Xcode. Generally, it means that modifications refer to `node_modules` files. If you wish for your changes to be placed in the main folder in order to commit them use: 
 ```bash
 ./copyFromNodeModules.sh
 ``` 
