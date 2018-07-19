@@ -1,0 +1,34 @@
+
+{
+  "name": "react-native-haptics",
+  "title": "React Native Haptics",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osdnk/react-native-haptics.git",
+    "baseUrl": "https://github.com/osdnk/react-native-haptics"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "osdnk",
+    "email": "micosa97@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "16.0.0-alpha.6",
+    "react-native": "^0.44.1"
+  },
+  "devDependencies": {
+    "react": "16.0.0-alpha.6",
+    "react-native": "^0.44.1"
+  }
+}

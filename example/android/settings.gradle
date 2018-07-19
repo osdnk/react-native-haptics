@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+include ':react-native-haptics'
+project(':react-native-haptics').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-haptics/android')
+
+include ':app'
