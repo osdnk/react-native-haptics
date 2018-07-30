@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Button} from 'react-native';
 import RNH from 'react-native-haptics'
 
 const instructions = Platform.select({
@@ -11,12 +11,18 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   render() {
-    RNH.tada();
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Button title="N S" onPress={() => RNH.notification("success")}/>
+        <Button title="N W" onPress={() => RNH.notification("warning")}/>
+        <Button title="N E" onPress={() => RNH.notification("error")}/>
+        <Button title="I L" onPress={() => RNH.impact("light")}/>
+        <Button title="I M" onPress={() => RNH.impact("medium")}/>
+        <Button title="I H" onPress={() => RNH.impact("heavy")}/>
+        <Button title="S" onPress={() => RNH.selection()}/>
       </View>
     );
   }
