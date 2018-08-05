@@ -6,7 +6,7 @@ Library for performing haptic feedback in React Native
 
 ## API
 Library exports methods:
-### impact
+### `impact(type)`
 Use impact feedback to indicate that an impact has occurred. For example, you might trigger impact feedback when a user interface object collides with another object or snaps into place.
 
 #### `impact("heavy")`
@@ -18,7 +18,7 @@ A collision between moderately sized user interface elements.
 #### `impact("light")`
 A collision between small, light user interface elements.
 
-### notification
+### `notification(type)`
 Use notification feedback to communicate that a task or action has succeeded, failed, or produced a warning of some kind.
 
 #### `notification("error")`
