@@ -35,9 +35,41 @@
 ## Usage
 ```javascript
 import RNHaptics from 'react-native-haptics';
+const { notification, impact, selection } = RNHaptics;
 
-RNHaptics.tada();
+notification("error")
+
 ```
+
+## API
+Library exports methods:
+### impact
+Use impact feedback to indicate that an impact has occurred. For example, you might trigger impact feedback when a user interface object collides with another object or snaps into place.
+
+#### `impact("heavy")`
+A collision between large, heavy user interface elements.
+
+#### `impact("medium")` or `impact()` - default
+A collision between moderately sized user interface elements.
+
+#### `impact("light")`
+A collision between small, light user interface elements.
+
+### notification
+Use notification feedback to communicate that a task or action has succeeded, failed, or produced a warning of some kind.
+
+#### `notification("error")`
+A notification feedback type, indicating that a task has failed.
+
+#### `notification("success")` or `notification()` - default
+A notification feedback type, indicating that a task has completed successfully.
+
+#### `notification("warining")`
+A notification feedback type, indicating that a task has produced a warning.
+
+
+### `selection()`
+Use selection feedback to communicate movement through a series of discrete values.
 
 ## Development
 In order to develop simply modify files by opening the `Example` app via Android Studio or Xcode. Generally, it means that modifications refer to `node_modules` files. If you wish for your changes to be placed in the main folder in order to commit them use: 
